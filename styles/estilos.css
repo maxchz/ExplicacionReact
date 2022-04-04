@@ -53,3 +53,19 @@ ul {
 }
 
 /* box-shadow: 0 2px 16px 0 rgba(0,0,0,0.24),0 -2px 16px 0 rgba(0,0,0,0.16); */
+.buscar{
+    background-color: white;
+    border:1px solid rgb(206, 206, 206);
+    padding:3px;
+    border-radius: 7px;
+}
+
+.buscar:focus-within{
+    border:1px solid rgb(117, 124, 214);
+
+}
+
+.buscar > input{
+    outline: none;
+    border: 0px;
+}
