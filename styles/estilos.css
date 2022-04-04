@@ -12,3 +12,22 @@ ul {
     justify-content: space-between;
     padding: 10px;
 }
+
+.mainButton{
+    background-color: rgb(164, 248, 7);
+    color:black;
+    border:0px;
+    padding: 7px 10px;
+    border-radius: 12px;
+    font-weight: bolder;
+    
+}
+
+.mainButton:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.24),0 -2px 8px 0 rgba(0,0,0,0.16);
+    transform: scale(1.1);
+    
+}
+
+/* box-shadow: 0 2px 16px 0 rgba(0,0,0,0.24),0 -2px 16px 0 rgba(0,0,0,0.16); */
