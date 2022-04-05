@@ -11,7 +11,18 @@ ul {
     display:flex;
     justify-content: space-between;
     padding: 10px;
+    background-color: rgb(237, 237, 238);
+    border-bottom:1px solid grey;
+    box-shadow: 1px 1px grey;
 }
+
+.navbar > li{
+    display: flex;
+    align-items: center;
+}
+
+
+
 
 .logo{
     height: 50px;
@@ -58,6 +69,9 @@ ul {
     border:1px solid rgb(206, 206, 206);
     padding:3px;
     border-radius: 7px;
+    width: 300px;
+    display:flex;
+    justify-content: space-between;
 }
 
 .buscar:focus-within{
@@ -68,4 +82,15 @@ ul {
 .buscar > input{
     outline: none;
     border: 0px;
+}
+
+.lupa {
+    color:rgb(225, 225, 236);
+}
+
+.lupa:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color:black;
+    
 }
