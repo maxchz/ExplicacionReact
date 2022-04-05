@@ -96,6 +96,7 @@ ul {
 
 .contenedorActivos{
     display: flex;
+    justify-content: center;
 }
 
 .contenedorTresActivos{
