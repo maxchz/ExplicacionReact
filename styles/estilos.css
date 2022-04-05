@@ -92,5 +92,23 @@ ul {
     cursor: pointer;
     transform: scale(1.1);
     color:black;
-    
+}
+
+.contenedorActivos{
+    display: flex;
+}
+
+.contenedorTresActivos{
+    margin:10px;
+}
+
+.contenedorImagen{
+    width:400px;
+    height:300px;
+    display:flex;
+}
+
+.contenedorImagen > img{
+    object-fit:  contain;
+    width:100%;
 }
