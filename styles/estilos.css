@@ -1,6 +1,12 @@
 body{
     margin:0px;
 }
+
+.tituloPagina{
+    display: flex;
+    justify-content:center;
+}
+
 ul {
     list-style:none;
     padding: 0px;
@@ -101,15 +107,32 @@ ul {
 
 .contenedorTresActivos{
     margin:10px;
+    background-color: rgb(218, 209, 209);
+    border-radius: 10px;
 }
 
 .contenedorImagen{
     width:400px;
     height:300px;
     display:flex;
+    margin-bottom: 8px;
+}
+
+.contenedorTresActivos:hover{
+    cursor: pointer;
+    transform: scale(1.005);
 }
 
 .contenedorImagen > img{
-    object-fit:  contain;
+    object-fit:  cover;
     width:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tipodeActivo {
+    color:rgb(39, 34, 34);
+    margin:10px;
+    font-weight: bold;
+    font-size: x-large;
 }

@@ -1,0 +1,138 @@
+body{
+  margin:0px;
+}
+
+.tituloPagina{
+  display: flex;
+  justify-content:center;
+}
+
+ul {
+  list-style:none;
+  padding: 0px;
+  margin:0px;
+}
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(237, 237, 238);
+  border-bottom:1px solid grey;
+  box-shadow: 1px 1px grey;
+}
+
+.navbar > li{
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+.logo{
+  height: 50px;
+}
+.mainButton{
+  background-color: rgb(164, 248, 7);
+  color:black;
+}
+.button{
+  border:0px;
+  padding: 7px 10px;
+  border-radius: 12px;
+  font-weight: bolder;
+}
+
+
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  
+}
+
+.mainButton{
+  background-color: rgb(164, 248, 7);
+  color:black;       
+}
+
+.mainButton:hover{
+  box-shadow: 0 2px 8px 0 rgba(164,248,50,0.40),0 -2px 8px 0 rgba(164,248,50,0.40);
+}
+
+.secundaryButton{
+  background-color: rgb(214, 236, 216);
+  color:black;          
+}
+
+.secundaryButton:hover{
+  box-shadow: 0 2px 8px 0 rgba(214,236,250,0.40),0 -2px 8px 0 rgba(214,236,250,0.40);    
+}
+
+/* box-shadow: 0 2px 16px 0 rgba(0,0,0,0.24),0 -2px 16px 0 rgba(0,0,0,0.16); */
+.buscar{
+  background-color: white;
+  border:1px solid rgb(206, 206, 206);
+  padding:3px;
+  border-radius: 7px;
+  width: 300px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.buscar:focus-within{
+  border:1px solid rgb(117, 124, 214);
+
+}
+
+.buscar > input{
+  outline: none;
+  border: 0px;
+}
+
+.lupa {
+  color:rgb(225, 225, 236);
+}
+
+.lupa:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  color:black;
+}
+
+.contenedorActivos{
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorTresActivos{
+  margin:10px;
+  background-color: rgb(218, 209, 209);
+  border-radius: 10px;
+}
+
+.contenedorImagen{
+  width:400px;
+  height:300px;
+  display:flex;
+  margin-bottom: 8px;
+}
+
+.contenedorTresActivos:hover{
+  cursor: pointer;
+  transform: scale(1.005);
+}
+
+.contenedorImagen > img{
+  object-fit:  cover;
+  width:100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tipodeActivo {
+  color:rgb(39, 34, 34);
+  margin:10px;
+  font-weight: bold;
+  font-size: x-large;
+}
