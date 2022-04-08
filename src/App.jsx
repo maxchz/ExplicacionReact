@@ -10,7 +10,8 @@ import opex from './media/opex.jpg';
 function App() {
   return (
     <div className="App">
-      <header>
+        <header>
+            <div></div>
         <ul className="navbar">
             <li>
                 <img src={logonavbar} alt="logo" className="logo"/>
@@ -37,48 +38,56 @@ function App() {
         </ul>
 
 
-    </header>
+        </header>
 
-    <main>
+        <main>
         <section>
             <h1 className="tituloPagina">Activos Financieros</h1>
-            <ul className="contenedorActivos">
-                <li className="contenedorTresActivos">
-                    <div className="contenedorImagen">
-                        <img src={on} alt="Imagen de obligaciones negociables"/>
-                    </div>
-                    <span className="tipodeActivo">Obligaciones Negociables</span>
-                </li>
-                
-                <li className="contenedorTresActivos">
-                    <div className="contenedorImagen">
-                        <img src={stock} alt="Imagen de acciones"/>
-                    </div>
-                    <span className="tipodeActivo">Acciones</span>
+            <ul className="contenedorActivos">                             
 
-                </li>
-
-                <li className="contenedorTresActivos">
-                    <div className="contenedorImagen">
-                        <img src={opex} alt="Imgagen de opciones"/>
-                    </div>
-                    <span className="tipodeActivo">Opciones</span>
-
-                </li>
+                <CardArctivos nombreActivo="Obligaciones Negociables" imagen={on} />
+                <CardArctivos nombreActivo="Acciones" imagen={stock} />
+                <CardArctivos nombreActivo="Opciones" imagen={opex} />
 
 
             </ul>
         </section>
         <section></section>
 
-    </main>
+        </main>
 
-    <footer>
+        <footer>
+            
 
-    </footer>
-     
+        </footer>
     </div>
   );
+}
+
+
+// function CardArctivos({nombreActivo, imagen}){
+//     return(
+//         <li className="contenedorTresActivos">
+//             <div className="contenedorImagen">
+//                 <img src={imagen} alt={nombreActivo}/>
+//             </div>
+//             <span className="tipodeActivo">{nombreActivo}</span>
+
+//         </li>
+//     )
+
+// }
+function CardArctivos(props){
+    return(
+        <li className="contenedorTresActivos">
+            <div className="contenedorImagen">
+                <img src={props.imagen} alt={props.nombreActivo}/>
+            </div>
+            <span className="tipodeActivo">{props.nombreActivo}</span>
+
+        </li>
+    )
+
 }
 
 export default App;
